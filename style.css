@@ -53,6 +53,7 @@ header {
 header h1 {
   font-size: 70px;
   font-weight: bold;
+  font-family: sans-serif;
   margin-top: -5vh;
 }
 
@@ -96,7 +97,7 @@ footer {
 Media Queries
 *******************/
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 550px) {
   .background.background {
     top: 0;
     background-size: cover;
@@ -106,23 +107,26 @@ Media Queries
   }
 
   .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: url('img/zeke-square.jpg') center center;
-    background-size: cover;
-    margin: 10vh auto;
+    width: 130px;
+    height: 130px;
+    margin: 5vh auto;
   }
 
   header h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
-    margin-top: -5vh;
+    margin-top: -6vh;
   }
 
   header p {
-    font-size: 20px;
-    margin-top: -5vh;
+    font-size: 18px;
+    margin-top: -8vh;
+  }
+  
+  .genericon.genericon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
   }
 }
 
