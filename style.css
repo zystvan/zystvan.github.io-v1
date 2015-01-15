@@ -89,3 +89,7 @@ footer {
   width: 100vw;
   color: white;
 }
+
+footer a {
+  color: white;
+}
