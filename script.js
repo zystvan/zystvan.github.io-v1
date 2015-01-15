@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  // get a random number between 1 and 19
+  // get a random number between 1 and 20
   var min = 1;
-  var max = 19;
+  var max = 20;
   var random = Math.floor(Math.random() * (max - min + 1)) + min;
   
   // generate a background image based on the random number
@@ -48,9 +48,6 @@ $(document).ready(function() {
     case 14:
       $('header .background').css("background", "url('img/sheep.jpg') center center no-repeat fixed");
       break;
-    case 15:
-      $('header .background').css("background", "url('img/snowy-mountains-day.jpg') center center no-repeat fixed");
-      break;
     case 16:
       $('header .background').css("background", "url('img/snowy-mountains-evening.jpg') center center no-repeat fixed");
       break;
@@ -62,6 +59,9 @@ $(document).ready(function() {
       break;
     case 19:
       $('header .background').css("background", "url('img/watery-rocks.jpg') center center no-repeat fixed");
+      break;
+    case 20:
+      $('header .background').css("background", "url('img/bear.jpg') center center no-repeat fixed");
       break;
   }
   });
