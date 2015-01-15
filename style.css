@@ -90,6 +90,34 @@ footer {
   color: white;
 }
 
-footer a {
-  color: white;
+
+
+/*******************
+Media Queries
+*******************/
+
+@media screen and (max-width: 500px) and (max-height: 750px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url('img/zeke-square.jpg') center center;
+    background-size: cover;
+    margin: 8vh auto;
+  }
+  
+  header h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: -5vh;
+  }
+  
+  header p {
+    font-size: 16px;
+    margin-top: -5vh;
+  }
+  
+  footer {
+    font-size: 14px;
+  }
 }
