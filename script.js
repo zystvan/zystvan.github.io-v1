@@ -7,7 +7,7 @@ $(document).ready(function() {
   // generate a background image based on the random number
   switch (random) {
     case 1:
-      $('header .background').css("background", "url('img/creek-valley.jpg') center center no-repeat fixed");
+      $('header .background').css("background", "url('img/river-mountains-trees.jpg') center center no-repeat fixed");
       break;
     case 2:
       $('header .background').css("background", "url('img/fox.jpg') center center no-repeat fixed");
@@ -61,7 +61,7 @@ $(document).ready(function() {
       $('header .background').css("background", "url('img/watery-rocks.jpg') center center no-repeat fixed");
       break;
     case 20:
-      $('header .background').css("background", "url('img/bear.jpg') center center no-repeat fixed");
+      $('header .background').css("background", "url('img/grass-mountain.jpg') center center no-repeat fixed");
       break;
   }
   });
