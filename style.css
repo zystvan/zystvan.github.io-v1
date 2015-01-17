@@ -53,7 +53,7 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url('images/zeke-square.jpg') center center;
+  background: url('img/zeke-square.jpg') center center;
   background-size: cover;
   margin: 10vh auto;
 }
