@@ -1,5 +1,7 @@
+/*@import url('icons/genericons.css');*/
+
 /*******************
-Body
+General
 *******************/
 
 body {
@@ -8,13 +10,17 @@ body {
   cursor: default;
 }
 
+.content {
+  margin-top: 100vh;
+}
+
 
 
 /*******************
 Full Page Stuff
 *******************/
 
-.full-page, .iframe-cover {
+.full-page {
   position: absolute;
   left: 0;
   width: 100vw;
@@ -38,6 +44,7 @@ header {
   top: 0;
   background-size: cover !important;
   z-index: -1;
+  position: fixed;
   -webkit-filter: brightness(0.65) grayscale(0.4);
   filter: brightness(0.75) grayscale(0.8);
 }
@@ -46,15 +53,15 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url('img/zeke-square.jpg') center center;
+  background: url('images/zeke-square.jpg') center center;
   background-size: cover;
   margin: 10vh auto;
 }
 
 header h1 {
   font-size: 70px;
-  font-weight: bold;
-  font-family: 'PinyonScriptRegular', sans-serif;
+  font-weight: normal;
+  font-family: AlexBrushRegular, PinyonScriptRegular, sans-serif;
   margin-top: -5vh;
 }
 
@@ -63,18 +70,42 @@ header p {
   margin-top: -5vh;
 }
 
-
-
-/*******************
-Profile Links
-*******************/
+header a {
+  color: white;
+  text-decoration: none;
+}
 
 .genericon.genericon {
   font-size: 50px;
   width: 50px;
   height: 50px;
+}
+
+
+
+/*******************
+Posts & Pages
+*******************/
+
+.post, .page {
   color: white;
-  text-decoration: none;
+  text-align: center;
+  background-color: rgba(50, 50, 50, 0.1);
+  border-radius: 10px;
+}
+
+.post a, .page a {
+  text-decoration: underline;
+  color: white;
+}
+
+.post img, .page img {
+  max-width: 90vw;
+  height: auto;
+}
+
+.read-more {
+  display: block;
 }
 
 
@@ -84,11 +115,7 @@ Footer
 *******************/
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   text-align: center;
-  width: 100vw;
   color: white;
 }
 
@@ -99,14 +126,6 @@ Media Queries
 *******************/
 
 @media screen and (max-height: 550px) {
-  .background.background {
-    top: 0;
-    background-size: cover;
-    z-index: -1;
-    -webkit-filter: brightness(0.65) grayscale(0.4);
-    filter: brightness(0.75) grayscale(0.8);
-  }
-
   .profile-img {
     width: 130px;
     height: 130px;
@@ -115,7 +134,6 @@ Media Queries
 
   header h1 {
     font-size: 60px;
-    font-weight: bold;
     margin-top: -6vh;
   }
 
@@ -135,15 +153,11 @@ Media Queries
   .profile-img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    background: url('img/zeke-square.jpg') center center;
-    background-size: cover;
     margin: 8vh auto;
   }
   
   header h1 {
     font-size: 46px;
-    font-weight: bold;
     margin-top: -5vh;
   }
   
