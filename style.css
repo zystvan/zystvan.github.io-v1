@@ -61,7 +61,7 @@ header {
 header h1 {
   font-size: 70px;
   font-weight: normal;
-  font-family: AlexBrushRegular, PinyonScriptRegular, sans-serif;
+  font-family: 'AlexBrushRegular', sans-serif;
   margin-top: -5vh;
 }
 
