@@ -52,8 +52,8 @@ header {
 .profile-img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  background: url('img/zeke-square.jpg') center center;
+  border-radius: 50%;  
+  background: url('https://www.gravatar.com/avatar/bf027800b209554dcd00e587a443bed6?s=400') center center;
   background-size: cover;
   margin: 10vh auto;
 }
