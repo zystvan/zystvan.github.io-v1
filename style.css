@@ -125,7 +125,8 @@ footer {
 }
 
 .portfolio-page-footer {
-  top: 330vh;
+  bottom: 0;
+  position: fixed;
 }
 
 
