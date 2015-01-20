@@ -111,12 +111,15 @@ Footer
 *******************/
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100vw;
   text-align: center;
   color: white;
+}
+
+.home-page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 

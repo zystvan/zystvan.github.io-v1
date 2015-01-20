@@ -62,6 +62,8 @@ $(document).ready(function() {
         $('.background').css("background", "url('img/grass-mountain.jpg') center center no-repeat fixed");
         break;
     }
+    
+    $('footer').addClass("home-page-footer");
   }
   else if (window.location.pathname == "/portfolio/" || window.location.pathname == "/portfolio") {
     switch (random) {
