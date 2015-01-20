@@ -38,7 +38,7 @@ header {
   z-index: -1;
   position: fixed;
   -webkit-filter: brightness(0.65) grayscale(0.4);
-  filter: brightness(0.75) grayscale(0.8);
+  filter: brightness(0.65) grayscale(0.4);
 }
 
 .profile-img {
