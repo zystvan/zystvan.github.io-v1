@@ -93,6 +93,10 @@ Portfolio
   margin: 0 auto;
 }
 
+.portfolio-list img:not(:nth-child(1)) {
+  margin-top: 5vh;
+}
+
 .portfolio-list p {
   max-width: 1000px;
   width: 50vw;
@@ -156,10 +160,6 @@ Media Queries
 }
 
 @media screen and (max-width: 700px) {
-  html {
-    margin-left: calc(100vw - 100%);
-    margin-right: 0;
-  }
   
   /*****
   Header
