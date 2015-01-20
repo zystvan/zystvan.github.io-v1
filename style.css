@@ -1,8 +1,10 @@
-/*@import url('icons/genericons.css');*/
-
 /*******************
 General
 *******************/
+
+* {
+  transition: all 0.1s;
+}
 
 body {
   overflow-x: hidden;
@@ -13,12 +15,6 @@ body {
 .content {
   margin-top: 100vh;
 }
-
-
-
-/*******************
-Full Page Stuff
-*******************/
 
 .full-page {
   position: absolute;
@@ -50,8 +46,8 @@ header {
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;  
   background: url('https://www.gravatar.com/avatar/bf027800b209554dcd00e587a443bed6?s=400') center center;
   background-size: cover;
@@ -131,8 +127,8 @@ Media Queries
 
 @media screen and (max-height: 550px) {
   .profile-img {
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 180px;
     margin: 5vh auto;
   }
 
@@ -155,8 +151,8 @@ Media Queries
 
 @media screen and (max-width: 700px) {
   .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 8vh auto;
   }
   
