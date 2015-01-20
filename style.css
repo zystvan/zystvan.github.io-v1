@@ -12,10 +12,6 @@ body {
   cursor: default;
 }
 
-.content {
-  margin-top: 100vh;
-}
-
 .full-page {
   position: absolute;
   left: 0;
@@ -80,28 +76,12 @@ header a {
 
 
 /*******************
-Posts & Pages
+Portfolio
 *******************/
 
-.post, .page {
-  color: white;
-  text-align: center;
-  background-color: rgba(50, 50, 50, 0.1);
-  border-radius: 10px;
-}
-
-.post a, .page a {
-  text-decoration: underline;
-  color: white;
-}
-
-.post img, .page img {
-  max-width: 90vw;
-  height: auto;
-}
-
-.read-more {
-  display: block;
+.portfolio-project-description {
+  max-width: 1000px;
+  width: 50vw;
 }
 
 
