@@ -93,7 +93,7 @@ Portfolio
   margin: 0 auto;
 }
 
-.portfolio-list img:not(:nth-child(1)) {
+.portfolio-list img:not(.first) {
   margin-top: 5vh;
 }
 
