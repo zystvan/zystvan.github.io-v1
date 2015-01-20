@@ -122,6 +122,8 @@ $(document).ready(function() {
         $('.background').css("background", "url('../img/grass-mountain.jpg') center center no-repeat fixed");
         break;
     }
+    
+    $('footer').addClass("portfolio-page-footer");
   }
 });
 
