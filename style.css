@@ -127,6 +127,11 @@ Media Queries
 *******************/
 
 @media screen and (max-height: 550px) {
+  
+  /*****
+  Header
+  *****/
+  
   .profile-img {
     width: 180px;
     height: 180px;
@@ -151,6 +156,15 @@ Media Queries
 }
 
 @media screen and (max-width: 700px) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+  
+  /*****
+  Header
+  *****/
+  
   .profile-img {
     width: 150px;
     height: 150px;
@@ -172,6 +186,10 @@ Media Queries
     width: 40px;
     height: 40px;
   }
+  
+  /*****
+  Footer
+  *****/
   
   footer {
     font-size: 14px;
