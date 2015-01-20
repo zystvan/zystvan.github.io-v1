@@ -106,7 +106,7 @@ Portfolio
   margin: 5vh auto;
 }
 
-.portfolio-list p:nth-last-child {
+.portfolio-list p.last {
   margin-bottom: 3vh;
 }
 
