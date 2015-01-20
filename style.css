@@ -82,6 +82,7 @@ Portfolio
 .portfolio-list {
   position: absolute;
   top: 100vh;
+  width: 100vw;
 }
 
 .portfolio-list img {
