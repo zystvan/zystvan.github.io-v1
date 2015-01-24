@@ -2,10 +2,6 @@
 General
 *******************/
 
-* {
-  transition: all 0.05s;
-}
-
 body {
   overflow-x: hidden;
   font-family: sans-serif;
