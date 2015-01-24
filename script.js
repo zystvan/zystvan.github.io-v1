@@ -3,126 +3,37 @@ $(document).ready(function() {
   var min = 1;
   var max = 18;
   var random = Math.floor(Math.random() * (max - min + 1)) + min;
-  
+
+  var bgImages = [
+    'img/river-mountains-trees.jpg',
+    'img/fox.jpg',
+    'img/grass.jpg',
+    'img/moose.jpg',
+    'img/mountain.jpg',
+    'img/mountain-top.jpg',
+    'img/ocean-mountains.jpg',
+    'img/stream.jpg',
+    'img/volcano.jpg',
+    'img/bear.jpg',
+    'img/leopard.jpg',
+    'img/mountain-ridge.jpg',
+    'img/watery-rocks.jpg',
+    'img/snowy-trees.jpg',
+    'img/snowy-mountains-night.jpg',
+    'img/snowy-mountains-evening.jpg',
+    'img/sheep.jpg',
+    'img/watery-rocks.jpg',
+    'img/grass-mountain.jpg'
+  ];
+
   // generate a background image based on the random number
   if (window.location.pathname == "/" || window.location.pathname == "") {
-    switch (random) {
-      case 1:
-        $('.background').css("background", "url('img/river-mountains-trees.jpg') center center no-repeat fixed");
-        break;
-      case 2:
-        $('.background').css("background", "url('img/fox.jpg') center center no-repeat fixed");
-        break;
-      case 3:
-        $('.background').css("background", "url('img/grass.jpg') center center no-repeat fixed");
-        break;
-      case 4:
-        $('.background').css("background", "url('img/moose.jpg') center center no-repeat fixed");
-        break;
-      case 5:
-        $('.background').css("background", "url('img/mountain.jpg') center center no-repeat fixed");
-        break;
-      case 6:
-        $('.background').css("background", "url('img/mountain-top.jpg') center center no-repeat fixed");
-        break;
-      case 7:
-        $('.background').css("background", "url('img/ocean-mountains.jpg') center center no-repeat fixed");
-        break;
-      case 8:
-        $('.background').css("background", "url('img/stream.jpg') center center no-repeat fixed");
-        break;
-      case 9:
-        $('.background').css("background", "url('img/volcano.jpg') center center no-repeat fixed");
-        break;
-      case 10:
-        $('.background').css("background", "url('img/bear.jpg') center center no-repeat fixed");
-        break;
-      case 11:
-        $('.background').css("background", "url('img/leopard.jpg') center center no-repeat fixed");
-        break;
-      case 12:
-        $('.background').css("background", "url('img/mountain-ridge.jpg') center center no-repeat fixed");
-        break;
-      case 13:
-        $('.background').css("background", "url('img/sheep.jpg') center center no-repeat fixed");
-        break;
-      case 14:
-        $('.background').css("background", "url('img/snowy-mountains-evening.jpg') center center no-repeat fixed");
-        break;
-      case 15:
-        $('.background').css("background", "url('img/snowy-mountains-night.jpg') center center no-repeat fixed");
-        break;
-      case 16:
-        $('.background').css("background", "url('img/snowy-trees.jpg') center center no-repeat fixed");
-        break;
-      case 17:
-        $('.background').css("background", "url('img/watery-rocks.jpg') center center no-repeat fixed");
-        break;
-      case 18:
-        $('.background').css("background", "url('img/grass-mountain.jpg') center center no-repeat fixed");
-        break;
-    }
-    
+    $('.background').css('background', 'url(\'' + bgImages[random] + '\') center center no-repeat fixed');
+
     $('footer').addClass("home-page-footer");
   }
   else if (window.location.pathname == "/portfolio/" || window.location.pathname == "/portfolio") {
-    switch (random) {
-      case 1:
-        $('.background').css("background", "url('../img/river-mountains-trees.jpg') center center no-repeat fixed");
-        break;
-      case 2:
-        $('.background').css("background", "url('../img/fox.jpg') center center no-repeat fixed");
-        break;
-      case 3:
-        $('.background').css("background", "url('../img/grass.jpg') center center no-repeat fixed");
-        break;
-      case 4:
-        $('.background').css("background", "url('../img/moose.jpg') center center no-repeat fixed");
-        break;
-      case 5:
-        $('.background').css("background", "url('../img/mountain.jpg') center center no-repeat fixed");
-        break;
-      case 6:
-        $('.background').css("background", "url('../img/mountain-top.jpg') center center no-repeat fixed");
-        break;
-      case 7:
-        $('.background').css("background", "url('../img/ocean-mountains.jpg') center center no-repeat fixed");
-        break;
-      case 8:
-        $('.background').css("background", "url('../img/stream.jpg') center center no-repeat fixed");
-        break;
-      case 9:
-        $('.background').css("background", "url('../img/volcano.jpg') center center no-repeat fixed");
-        break;
-      case 10:
-        $('.background').css("background", "url('../img/bear.jpg') center center no-repeat fixed");
-        break;
-      case 11:
-        $('.background').css("background", "url('../img/leopard.jpg') center center no-repeat fixed");
-        break;
-      case 12:
-        $('.background').css("background", "url('../img/mountain-ridge.jpg') center center no-repeat fixed");
-        break;
-      case 13:
-        $('.background').css("background", "url('../img/sheep.jpg') center center no-repeat fixed");
-        break;
-      case 14:
-        $('.background').css("background", "url('../img/snowy-mountains-evening.jpg') center center no-repeat fixed");
-        break;
-      case 15:
-        $('.background').css("background", "url('../img/snowy-mountains-night.jpg') center center no-repeat fixed");
-        break;
-      case 16:
-        $('.background').css("background", "url('../img/snowy-trees.jpg') center center no-repeat fixed");
-        break;
-      case 17:
-        $('.background').css("background", "url('../img/watery-rocks.jpg') center center no-repeat fixed");
-        break;
-      case 18:
-        $('.background').css("background", "url('../img/grass-mountain.jpg') center center no-repeat fixed");
-        break;
-    }
-    
+    $('.background').css('background', 'url(\'../' + bgImages[random] + '\') center center no-repeat fixed');
     $('footer').addClass("portfolio-page-footer");
   }
 });
