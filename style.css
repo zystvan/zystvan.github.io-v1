@@ -34,7 +34,10 @@ header {
 
 .background {
   top: 0;
-  background-size: cover !important;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: -1;
   position: fixed;
   -webkit-filter: brightness(0.65) grayscale(0.4);
