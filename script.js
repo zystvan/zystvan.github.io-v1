@@ -1,9 +1,4 @@
 $(document).ready(function() {
-  // get a random number between 1 and 18
-  var min = 1;
-  var max = 18;
-  var random = Math.floor(Math.random() * (max - min + 1)) + min;
-
   var bgImages = [
     'img/river-mountains-trees.jpg',
     'img/fox.jpg',
@@ -25,6 +20,8 @@ $(document).ready(function() {
     'img/watery-rocks.jpg',
     'img/grass-mountain.jpg'
   ];
+
+  var random = Math.floor(Math.random() * bgImages.length);
 
   // generate a background image based on the random number
   if (window.location.pathname == "/" || window.location.pathname == "") {
