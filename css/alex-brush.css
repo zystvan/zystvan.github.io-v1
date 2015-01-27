@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'AlexBrushRegular';
-  src: url('AlexBrushRegular.otf') format('opentype');
+  src: url('../AlexBrushRegular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Alex Brush';
-  src: url('AlexBrushRegular.otf') format('opentype');
+  src: url('../AlexBrushRegular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
