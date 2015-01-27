@@ -23,8 +23,9 @@ $(document).ready(function() {
 
   var random = Math.floor(Math.random() * bgImages.length);
 
+  $('.background').css("background", "url(\'' + bgImages[random] + '\')");
   // generate a background image based on the random number
-  if (window.location.pathname == "/" || window.location.pathname == "") {
+  /*if (window.location.pathname == "/" || window.location.pathname == "") {
     $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
 
     $('footer').addClass("home-page-footer");
@@ -32,7 +33,7 @@ $(document).ready(function() {
   else if (window.location.pathname == "/portfolio/" || window.location.pathname == "/portfolio") {
     $('.background').css('background', 'url(\'../' + bgImages[random] + '\')');
     $('footer').addClass("portfolio-page-footer");
-  }
+  }*/
 });
 
 console.log("You don\'t have to be here! I made the code available on Github: \n https://github.com/KK4OXJ/KK4OXJ.github.io");
