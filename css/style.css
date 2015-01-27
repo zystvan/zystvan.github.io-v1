@@ -119,20 +119,12 @@ Footer
 *******************/
 
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
+  bottom: 0;
   width: 100vw;
   text-align: center;
   color: white;
-}
-
-.home-page-footer {
-  bottom: 0;
-}
-
-.portfolio-page-footer {
-  bottom: 0;
-  position: fixed;
 }
 
 
