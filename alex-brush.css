@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'AlexBrushRegular';
-  src: url('http://openfontlibrary.org/assets/fonts/alex-brush/0ac6d4d1fdda223fbbcd0640ced41b6a/b22285a3c572352dd81d4bd191d27637/AlexBrushRegular.otf') format('opentype');
+  src: url('AlexBrushRegular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Alex Brush';
-  src: url('http://openfontlibrary.org/assets/fonts/alex-brush/0ac6d4d1fdda223fbbcd0640ced41b6a/b22285a3c572352dd81d4bd191d27637/AlexBrushRegular.otf') format('opentype');
+  src: url('AlexBrushRegular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
