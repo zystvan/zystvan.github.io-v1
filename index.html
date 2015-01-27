@@ -13,9 +13,19 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   <meta http-equiv="cache-control" content="public" max-age="604800">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    if (window.location.host == "www.kk4oxj.github.io") {
+      window.location.host = "kk4oxj.github.io";
+    }
+    
+    if (window.location.protocol == "http") {
+      window.location.protocol = "https";
+    }
+  </script>
+
   <title>Zeke Y - Web designer/developer</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header -->
@@ -37,10 +47,10 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   </footer>
   
   <!-- Low priority stylesheets and JS -->
-  <link rel="stylesheet" href="icons/genericons/genericons.css">
-  <link rel="stylesheet" href="alex-brush.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
   
-  <script src="jquery.js"></script>
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="icons/genericons/genericons.css">
+  <link rel="stylesheet" href="css/alex-brush.css">
 </body>
 </html>
