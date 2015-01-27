@@ -23,7 +23,7 @@ $(document).ready(function() {
 
   var random = Math.floor(Math.random() * bgImages.length);
 
-  $('.background').css("background", "url(\'' + bgImages[random] + '\')");
+  $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
   // generate a background image based on the random number
   /*if (window.location.pathname == "/" || window.location.pathname == "") {
     $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
