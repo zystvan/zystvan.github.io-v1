@@ -101,7 +101,9 @@ Portfolio
   max-width: 1000px;
   width: 50vw;
   text-align: center;
-  background-color: rgba(100, 100, 100, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 10px;
   color: white;
   margin: 5vh auto;
 }
