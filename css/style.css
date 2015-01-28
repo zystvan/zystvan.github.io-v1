@@ -19,9 +19,6 @@ body {
   top: 0;
   background: center no-repeat fixed;
   background-size: cover !important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   z-index: -1;
   position: fixed;
   -webkit-filter: brightness(0.65) grayscale(0.4);
@@ -90,7 +87,7 @@ Portfolio
 .portfolio-list img {
   max-width: 800px;
   width: 90vw;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .portfolio-list img:not(.first) {
