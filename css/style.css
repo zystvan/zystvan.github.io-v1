@@ -135,10 +135,6 @@ Portfolio
   margin-top: 5vh;
 }
 
-.portfolio-list p:nth-last-child {
-  bottom: 999px;
-}
-
 .portfolio-list p {
   max-width: 1000px;
   width: 50vw;
