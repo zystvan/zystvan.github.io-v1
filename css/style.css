@@ -70,6 +70,47 @@ header a {
   height: 50px;
 }
 
+.genericon:hover {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+}
+
+
+
+/******************
+Overlay
+******************/
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+}
+
+.overlay iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 
 
 /*******************
@@ -94,6 +135,10 @@ Portfolio
   margin-top: 5vh;
 }
 
+.portfolio-list p:nth-last-child {
+  bottom: 999px;
+}
+
 .portfolio-list p {
   max-width: 1000px;
   width: 50vw;
@@ -103,10 +148,6 @@ Portfolio
   padding: 10px;
   color: white;
   margin: 5vh auto;
-}
-
-.portfolio-list p.last {
-  margin-bottom: 30px;
 }
 
 

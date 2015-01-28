@@ -22,20 +22,10 @@ $(document).ready(function() {
   ];
 
   var random = Math.floor(Math.random() * bgImages.length);
-
-  $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
-  // generate a background image based on the random number
-  /*if (window.location.pathname == "/" || window.location.pathname == "") {
-    $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
-
-    $('footer').addClass("home-page-footer");
-  }
-  else if (window.location.pathname == "/portfolio/" || window.location.pathname == "/portfolio") {
-    $('.background').css('background', 'url(\'../' + bgImages[random] + '\')');
-    $('footer').addClass("portfolio-page-footer");
-  }*/
   
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
+  
+  $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -45,6 +35,16 @@ $(document).ready(function() {
         }, 1000);
         return false;
       }
+    }
+  });
+  
+  $('.close').click(function() {
+    $('.overlay').fadeOut();
+  });
+  
+  $(document).keydown(function(event) {
+    if (event.which == 27) {
+      $('.overlay').fadeOut();
     }
   });
 });
