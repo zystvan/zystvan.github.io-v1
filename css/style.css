@@ -17,7 +17,7 @@ body {
 
 .background {
   top: 0;
-  background: center no-repeat fixed;
+  background: center center no-repeat fixed;
   background-size: cover !important;
   z-index: -1;
   position: fixed;
