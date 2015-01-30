@@ -71,8 +71,8 @@ header a {
 }
 
 .genericon:hover {
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 
@@ -99,8 +99,8 @@ Overlay
 }
 
 .close:hover {
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 .overlay iframe {
