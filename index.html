@@ -42,7 +42,8 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   <!-- Net neutrality widget -->
   <div class="full-page overlay">
     <span class="close">&times;</span>
-    <script src="https://fightforthefuture.github.io/countdown-widget/widget.min.js"></script>
+    <div id="widget-container"></div>
+  <!--  <script src="https://fightforthefuture.github.io/countdown-widget/widget.min.js"></script> -->
   </div>
   
   <!-- Portfolio -->
@@ -66,6 +67,13 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   <!-- Low priority stylesheets and JS -->
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://fightforthefuture.github.io/countdown-widget/widget.min.js"></script>
+  <script>
+    var cd_options = {
+      animation: 'banner',
+      elementId: 'widget-container'
+    }
+  </script>
   
   <link rel="stylesheet" href="icons/genericons/genericons.css">
   <link rel="stylesheet" href="css/alex-brush.css">
