@@ -229,6 +229,35 @@ Media Queries
   }
 }
 
+@media screen and (min-width: 1500px) {
+  
+  /*****
+  Header
+  *****/
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    margin: 8vh auto;
+  }
+  
+  header h1 {
+    font-size: 54px;
+    margin-top: -2.5vh;
+  }
+  
+  header p {
+    font-size: 16px;
+    margin-top: -2.5vh;
+  }
+  
+  .genericon.genericon {
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
 
 
 /*******************
