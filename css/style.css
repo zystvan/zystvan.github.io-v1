@@ -159,6 +159,7 @@ footer {
   width: 100vw;
   text-align: center;
   color: white;
+  font-size: 14px;
 }
 
 
@@ -222,13 +223,5 @@ Media Queries
     font-size: 40px;
     width: 40px;
     height: 40px;
-  }
-  
-  /*****
-  Footer
-  *****/
-  
-  footer {
-    font-size: 14px;
   }
 }
