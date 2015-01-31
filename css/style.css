@@ -257,6 +257,14 @@ Media Queries
   }
   
   /*****
+  Overlay
+  *****/
+  
+  .close {
+    font-size: 54px;
+  }
+  
+  /*****
   Footer
   *****/
   
