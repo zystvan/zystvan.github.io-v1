@@ -70,11 +70,6 @@ header a {
   height: 50px;
 }
 
-.genericon:hover {
-  -webkit-filter: brightness(0.9);
-  filter: brightness(0.9);
-}
-
 
 
 /******************
@@ -96,11 +91,9 @@ Overlay
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.close:hover {
-  -webkit-filter: brightness(0.9);
-  filter: brightness(0.9);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .overlay iframe {
@@ -141,9 +134,10 @@ Portfolio
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
-  padding: 10px;
+  padding: 0 10px;
   color: white;
   margin: 5vh auto;
+  line-height: 3;
 }
 
 
@@ -224,4 +218,18 @@ Media Queries
     width: 40px;
     height: 40px;
   }
+}
+
+
+
+/*******************
+Text Selection
+*******************/
+
+::-moz-selection {
+  background-color: rgba(0, 119, 255, 0.8);
+}
+
+::selection {
+  background-color: rgba(0, 119, 255, 0.8);
 }
