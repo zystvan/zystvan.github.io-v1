@@ -218,6 +218,15 @@ Media Queries
     width: 40px;
     height: 40px;
   }
+  
+  /*****
+  Overlay
+  *****/
+  
+  .close {
+    top: 10px;
+    right: 10px;
+  }
 }
 
 
