@@ -217,6 +217,7 @@ Media Queries
     font-size: 40px;
     width: 40px;
     height: 40px;
+    margin: 0 1vw;
   }
   
   /*****
@@ -236,25 +237,24 @@ Media Queries
   *****/
   
   .profile-img {
-    width: 200px;
-    height: 200px;
-    margin: 8vh auto;
+    width: 230px;
+    height: 230px;
+    margin: 10vh auto;
   }
   
   header h1 {
-    font-size: 54px;
-    margin-top: -2.5vh;
+    font-size: 64px;
   }
   
   header p {
     font-size: 16px;
-    margin-top: -2.5vh;
+  /*  margin-top: -2.5vh;*/
   }
   
   .genericon.genericon {
-    font-size: 45px;
-    width: 45px;
-    height: 45px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
   }
 }
 
