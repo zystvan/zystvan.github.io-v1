@@ -27,7 +27,7 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
 </head>
 <body>
   <!-- Background -->
-  <div class="full-page background"></div>
+  <div class="full-page background" id="background"></div>
   
   <!-- Header -->
   <header class="full-page">
@@ -66,15 +66,46 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   </footer>
   
   <!-- Low priority stylesheets and JS -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/script.min.js"></script>
-  <script type="text/javascript">
+  <script>
+    // array of all the background images
+    var bgImages = [
+      'img/river-mountains-trees.jpg',
+      'img/fox.jpg',
+      'img/grass.jpg',
+      'img/moose.jpg',
+      'img/mountain.jpg',
+      'img/mountain-top.jpg',
+      'img/ocean-mountains.jpg',
+      'img/stream.jpg',
+      'img/volcano.jpg',
+      'img/bear.jpg',
+      'img/leopard.jpg',
+      'img/mountain-ridge.jpg',
+      'img/watery-rocks.jpg',
+      'img/snowy-trees.jpg',
+      'img/snowy-mountains-night.jpg',
+      'img/snowy-mountains-evening.jpg',
+      'img/sheep.jpg',
+      'img/watery-rocks.jpg',
+      'img/grass-mountain.jpg'
+    ];
+
+    // randomly choose a background image...
+    var random = Math.floor(Math.random() * bgImages.length);
+
+    // ...and set that background image
+    var background = document.getElementById('background');
+    background.style["background"] = 'url(\'' + bgImages[random] + '\')';
+  </script>
+  <script async src="js/jquery.min.js"></script>
+  <script async src="js/script.min.js"></script>
+  <script>
     var _cd_options = {
       theme: 'red',
       elementId: 'widget-container'
     }
   </script>
-  <script src="https://fightforthefuture.github.io/countdown-widget/widget.min.js" async></script>
+  <script async src="https://fightforthefuture.github.io/countdown-widget/widget.min.js"></script>
   
   <link rel="stylesheet" href="css/genericons.min.css">
   <link rel="stylesheet" href="css/alex-brush.min.css">

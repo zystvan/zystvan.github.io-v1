@@ -214,10 +214,10 @@ Media Queries
   }
   
   .genericon.genericon {
-    font-size: 40px;
+    font-size: 48px;
     width: 40px;
     height: 40px;
-    margin: 0 1vw;
+    padding: 10px;
   }
   
   /*****
