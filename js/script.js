@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // array of all the background images
   var bgImages = [
     'img/river-mountains-trees.jpg',
     'img/fox.jpg',
@@ -21,10 +22,13 @@ $(document).ready(function() {
     'img/grass-mountain.jpg'
   ];
 
+  // randomly choose a background image...
   var random = Math.floor(Math.random() * bgImages.length);
   
-  $('.background').css('background', 'url(\'' + bgImages[random] + '\')');
+  // ...and set that background image
+  $('.background').css('background', 'url(\'' + bgImages[random] + '\') center center');
   
+  // smooth scroller widget thing by Chris Coyier (CSS-Tricks.com)
   $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -38,6 +42,7 @@ $(document).ready(function() {
     }
   });
   
+  // close the overlay
   $('.close').click(function() {
     $('.overlay').fadeOut();
   });
