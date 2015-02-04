@@ -6,15 +6,17 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
 -->
 
 <html>
-<head>
+<head lang="en">
   <meta charset="utf-8">
   
+  <!-- Redirect to HTTPS -->
   <script>
     if (window.location.protocol == "http:") {
       window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
     }
-  </script> 
+  </script>
   
+  <!-- Metadata -->
   <meta name="robots" content="index, follow, archive, cache, imageindex">
   <meta name="author" content="Zeke Y">
   <meta http-equiv="cache-control" content="public" max-age="604800">
@@ -22,10 +24,11 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
 
   <title>Zeke Y - Web designer/developer</title>
   
+  <!-- Stylesheets -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body ng-app="projects">
   <!-- Background -->
   <div class="full-page background" id="background"></div>
   
@@ -48,16 +51,13 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   </div>
   
   <!-- Portfolio -->
-  <div class="portfolio-list" id="portfolio">
-    <a href="#">
-      <img src="img/zeke-y-design.png" class="first">
-    </a>
-    <p>This is my own site. I was my own client for this project, and made it using HTML5/CSS3, JavaScript and jQuery.</p>
-   
-    <a href="http://lnxreviews.com">
-      <img src="img/lnxreviews.png">
-    </a>
-  <p>One of my first projects ever, I used HTML5/CSS3, a small amount of JavaScript/jQuery, and WordPress.</p>
+  <div class="portfolio-list" id="portfolio" ng-controller="projectList">
+    <div ng-repeat="project in projects">
+      <a ng-href="{{ project.url }}">
+        <img ng-src="{{ project.img }}">
+      </a>
+      <p>{{ project.description }}</p>
+    </div>
   </div>
   
   <!-- Footer -->
@@ -66,37 +66,7 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   </footer>
   
   <!-- Low priority stylesheets and JS -->
-  <script>
-    // array of all the background images
-    var bgImages = [
-      'img/river-mountains-trees.jpg',
-      'img/fox.jpg',
-      'img/grass.jpg',
-      'img/moose.jpg',
-      'img/mountain.jpg',
-      'img/mountain-top.jpg',
-      'img/ocean-mountains.jpg',
-      'img/stream.jpg',
-      'img/volcano.jpg',
-      'img/bear.jpg',
-      'img/leopard.jpg',
-      'img/mountain-ridge.jpg',
-      'img/watery-rocks.jpg',
-      'img/snowy-trees.jpg',
-      'img/snowy-mountains-night.jpg',
-      'img/snowy-mountains-evening.jpg',
-      'img/sheep.jpg',
-      'img/watery-rocks.jpg',
-      'img/grass-mountain.jpg'
-    ];
-
-    // randomly choose a background image...
-    var random = Math.floor(Math.random() * bgImages.length);
-
-    // ...and set that background image
-    var background = document.getElementById('background');
-    background.style["background"] = 'url(\'' + bgImages[random] + '\')';
-  </script>
+  <script src="js/background.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/script.min.js"></script>
   <script>
@@ -106,6 +76,9 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
     }
   </script>
   <script async src="https://fightforthefuture.github.io/countdown-widget/widget.min.js"></script>
+  <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+  <script src="js/controller.js"></script>
+  
   
   <link rel="stylesheet" href="css/genericons.min.css">
   <link rel="stylesheet" href="css/alex-brush.min.css">
