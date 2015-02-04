@@ -5,7 +5,7 @@ projects.controller('projectList', function($scope) {
     {
       'img': 'img/zeke-y-design.png',
       'url': '#',
-      'description': 'This website. Made with a mix of Javascript, jQuery, and Angular JS, I made it so I would have a public portfolio and a way for people to contact me.'
+      'description': 'This website. Made with a mix of Javascript, jQuery, and Angular JS, I created it so I would have a public portfolio and a way for people to contact me.'
     },
     {
       'img': 'img/lnxreviews.png',
