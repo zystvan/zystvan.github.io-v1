@@ -27,3 +27,6 @@ var random = Math.floor(Math.random() * bgImages.length);
 // ...and set that background image
 var background = document.getElementById('background');
 background.style["background"] = 'url(\'' + bgImages[random] + '\')';
+background.style["background-size"] = "cover";
+background.style["background-position"] = "center center";
+background.style["background-repeat"] = "no-repeat";

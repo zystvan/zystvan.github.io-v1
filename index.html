@@ -29,6 +29,12 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="projects">
+  <!-- Overlay -->
+  <div class="full-page overlay" id="overlay">
+    <span class="close" id="close">&times;</span>
+    <div id="widget-container"></div>
+  </div>
+  
   <!-- Background -->
   <div class="full-page background" id="background"></div>
   
@@ -38,17 +44,11 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
     <h1>Zeke Y</h1>
     <p>Web designer/developer</p>
     <!-- Profile links -->
-    <a href="#portfolio" class="genericon genericon-code" title="Portfolio"></a>
+    <a href="#portfolio" class="genericon genericon-code" title="Portfolio" id="portfolio-link"></a>
     <a href="mailto:zeke@lnxreviews.com" class="genericon genericon-mail" title="Email"></a>
     <a href="http://codepen.io/KK4OXJ" class="genericon genericon-codepen" title="CodePen"></a>
     <a href="https://github.com/KK4OXJ" class="genericon genericon-github" title="Github"></a>
   </header>
-  
-  <!-- Net neutrality widget -->
-  <div class="full-page overlay">
-    <span class="close">&times;</span>
-    <div id="widget-container"></div>
-  </div>
   
   <!-- Portfolio -->
   <div class="portfolio-list" id="portfolio" ng-controller="projectList">
@@ -69,9 +69,7 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
   </footer>
   
   <!-- Low priority stylesheets and JS -->
-  <script src="js/background.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
   <script>
     var _cd_options = {
       theme: 'red',

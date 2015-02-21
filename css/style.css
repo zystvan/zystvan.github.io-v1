@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
   cursor: default;
+  margin: 0;
 }
 
 .full-page {
@@ -17,61 +18,10 @@ body {
 
 .background {
   top: 0;
-  background-repeat: no-repeat;
-  background-size: cover !important;
   z-index: -1;
   position: fixed;
   -webkit-filter: brightness(0.65) grayscale(0.4);
   filter: brightness(0.65) grayscale(0.4);
-}
-
-
-
-/*******************
-Header
-*******************/
-
-header {
-  top: 0;
-  color: white;
-  text-align: center;
-  display: block;
-}
-
-.profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;  
-  background: url('https://www.gravatar.com/avatar/bf027800b209554dcd00e587a443bed6?s=400') center center;
-  background-size: cover;
-  margin: 10vh auto;
-}
-
-header h1 {
-  font-size: 70px;
-  font-weight: normal;
-  font-family: 'AlexBrushRegular', sans-serif;
-  margin-top: -5vh;
-}
-
-header p {
-  font-size: 20px;
-  margin-top: -5vh;
-}
-
-header a {
-  color: white;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.genericon.genericon {
-  font-size: 50px;
-  width: 50px;
-  height: 50px;
 }
 
 
@@ -115,6 +65,55 @@ Overlay
 
 
 /*******************
+Header
+*******************/
+
+header {
+  top: 0;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;  
+  background: url('https://www.gravatar.com/avatar/bf027800b209554dcd00e587a443bed6?s=400') center center;
+  background-size: cover;
+  margin: 10vh auto;
+}
+
+header h1 {
+  font-size: 70px;
+  font-family: 'Alex Brush', sans-serif;
+  font-weight: normal;
+  margin-top: -5vh;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: -5vh;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.genericon.genericon {
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/*******************
 Portfolio
 *******************/
 
@@ -136,7 +135,7 @@ Portfolio
   max-width: 1000px;
   width: 50vw;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
   padding: 10px;
   color: white;
