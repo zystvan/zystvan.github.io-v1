@@ -11,37 +11,34 @@ window.onload = function() {
   
   // https://gist.github.com/dezinezync/5487119
   // smoothly scroll to the portfolio
-  function scrollTo(Y, duration, easingFunction, callback) {
+  function scrollTo(Y, duration, easingFunction) {
     var start = Date.now();
     var elem = document.documentElement.scrollTop ? document.documentElement : document.body;
     var from = elem.scrollTop;
- 
+    
     if (from == Y) {
-      callback();
       return;
     }
- 
+    
     function min(a, b) {
     	return a < b ? a : b;
     }
- 
+    
     function scroll(timestamp) {
       var currentTime = Date.now();
       var time = min(1, ((currentTime - start) / duration));
       var easedT = easingFunction(time);
- 
+      
       elem.scrollTop = (easedT * (Y - from)) + from;
       
       if (time < 1) {
         requestAnimationFrame(scroll);
       }
       else {
-        if (callback) {
-          callback();
-        }
+        return;
       }
     }
- 
+    
     requestAnimationFrame(scroll)
   }
   
@@ -85,10 +82,10 @@ window.onload = function() {
     'img/watery-rocks.jpg',
     'img/grass-mountain.jpg'
   ];
-
+  
   // randomly choose a background image...
   var random = Math.floor(Math.random() * bgImages.length);
-
+  
   // ...and set that background image
   var background = document.getElementById('background');
   background.style["background"] = 'url(\'' + bgImages[random] + '\')';
