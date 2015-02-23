@@ -9,6 +9,12 @@ projects.controller('projectList', function($scope) {
       description: 'This website. Made with a mix of Javascript, jQuery, and Angular JS, I created it so I would have a public portfolio and a way for people to contact me.'
     },
     {
+      img: 'img/wwwman.png',
+      url: 'http://wonderwonderwonderman.com',
+      title: 'WonderWonderWonderMan',
+      description: 'My first ever project for someone other than myself, I created this website for a friend so he would have a website for his gaming videos.'
+    },
+    {
       img: 'img/lnxreviews.png',
       url: 'http://lnxreviews.com',
       title: 'LnxReviews',
