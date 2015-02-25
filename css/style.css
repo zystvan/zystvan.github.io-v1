@@ -21,6 +21,9 @@ body {
   z-index: -1;
   position: fixed;
   -webkit-filter: brightness(0.65) grayscale(0.4);
+  -moz-filter: brightness(0.65) grayscale(0.4);
+  -ms-filter: brightness(0.65) grayscale(0.4);
+  -o-filter: brightness(0.65) grayscale(0.4);
   filter: brightness(0.65) grayscale(0.4);
 }
 
@@ -48,6 +51,7 @@ Overlay
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -o-user-select: none;
   user-select: none;
 }
 
@@ -102,6 +106,7 @@ header a {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -o-user-select: none;
   user-select: none;
 }
 
@@ -260,6 +265,7 @@ Media Queries
     font-size: 56px;
     width: 56px;
     height: 56px;
+    margin: 10px 5px;
   }
   
   /*****
