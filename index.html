@@ -6,80 +6,77 @@ https://github.com/KK4OXJ/KK4OXJ.github.io
 -->
 
 <html>
-<head lang="en">
-  <meta charset="utf-8">
+  <head lang="en">
+    <meta charset="utf-8">
+    
+    <!-- Redirect to HTTPS -->
+    <script>
+      if (window.location.protocol == "http:") {
+        window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    
+    <!-- Metadata -->
+    <meta name="robots" content="index, follow, archive, cache, imageindex">
+    <meta name="author" content="Zeke Y">
+    <meta http-equiv="cache-control" content="public" max-age="604800">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
   
-  <!-- Redirect to HTTPS -->
-  <script>
-    if (window.location.protocol == "http:") {
-      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-    }
-  </script>
-  
-  <!-- Metadata -->
-  <meta name="robots" content="index, follow, archive, cache, imageindex">
-  <meta name="author" content="Zeke Y">
-  <meta http-equiv="cache-control" content="public" max-age="604800">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-  <title>Zeke Y - Web designer/developer</title>
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/genericons.min.css">
-  <link rel="stylesheet" href="css/alex-brush.min.css">
-</head>
-<body ng-app="projects">
-  <!-- Overlay -->
-  <div class="full-page overlay" id="overlay">
-    <span class="close" id="close">&times;</span>
-    <div id="widget-container"></div>
-  </div>
-  
-  <!-- Background -->
-  <div class="full-page background" id="background"></div>
-  
-  <!-- Header -->
-  <header class="full-page">
-    <div class="profile-img"></div>
-    <h1>Zeke Y</h1>
-    <p>Web designer/developer</p>
-    <!-- Profile links -->
-    <a href="#portfolio" class="genericon genericon-code" title="Portfolio" id="portfolio-link"></a>
-    <a href="mailto:zeke@lnxreviews.com" class="genericon genericon-mail" title="Email"></a>
-    <a href="http://codepen.io/KK4OXJ" class="genericon genericon-codepen" title="CodePen"></a>
-    <a href="https://github.com/KK4OXJ" class="genericon genericon-github" title="Github"></a>
-  </header>
-  
-  <!-- Portfolio -->
-  <div class="portfolio-list" id="portfolio" ng-controller="projectList">
-    <div ng-repeat="project in projects">
-      <a ng-href="{{ project.url }}">
-        <img ng-src="{{ project.img }}">
-      </a>
-      <div class="description">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+    <title>Zeke Y - Web designer/developer</title>
+    
+    <!-- Important stylesheets and JS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    
+    <script src="js/script.js"></script>
+  </head>
+  <body ng-app="projects">
+    <!-- Overlay - currently not in use -->
+    <!-- Also uncomment JS file -->
+    <!--<div class="full-page overlay" id="overlay">
+      <span class="close" id="close">&times;</span>
+      <div id="widget-container"></div>
+    </div>-->
+    
+    
+    <!-- Background -->
+    <div class="full-page background" id="background"></div>
+    
+    <!-- Header -->
+    <header class="full-page">
+      <div class="profile-img"></div>
+      <h1>Zeke Y</h1>
+      <p>Web designer/developer</p>
+      <!-- Profile links -->
+      <a href="#portfolio" class="genericon genericon-code" title="Portfolio" id="portfolio-link"></a>
+      <a href="mailto:zeke@lnxreviews.com" class="genericon genericon-mail" title="Email"></a>
+      <a href="http://codepen.io/KK4OXJ" class="genericon genericon-codepen" title="CodePen"></a>
+      <a href="https://github.com/KK4OXJ" class="genericon genericon-github" title="Github"></a>
+    </header>
+    
+    <!-- Portfolio -->
+    <div class="portfolio-list" id="portfolio" ng-controller="projectList">
+      <div ng-repeat="project in projects">
+        <a ng-href="{{ project.url }}">
+          <img ng-src="{{ project.img }}">
+        </a>
+        <div class="description">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Footer -->
-  <footer>
-    <p class="copyright-notice">&copy; Copyright <script>document.write(new Date().getFullYear());</script> Zeke Y</p>
-  </footer>
-  
-  <!-- Low priority stylesheets and JS -->
-  <script src="js/script.js"></script>
-  <script>
-    var _cd_options = {
-      theme: 'red',
-      elementId: 'widget-container'
-    };
-  </script>
-  <script async src="https://fightforthefuture.github.io/countdown-widget/widget.min.js"></script>
-  <script src="js/angular.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
+    
+    <!-- Footer -->
+    <footer>
+      <p class="copyright-notice">&copy; Copyright <script>document.write(new Date().getFullYear());</script> Zeke Y</p>
+    </footer>
+    
+    <!-- Low priority stylesheets and JS -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    
+    <link rel="stylesheet" href="css/alex-brush.min.css">
+    <link rel="stylesheet" href="css/genericons.min.css">
+  </body>
 </html>

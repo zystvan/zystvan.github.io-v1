@@ -3,34 +3,47 @@ window.onload = function() {
   
   // https://stackoverflow.com/a/18018710/4013202
   // fade something out
-  var elementToFade = document.getElementById('overlay').style;
+/*  var elementToFade = document.getElementById('overlay').style;
   elementToFade.opacity = 1;
-  function fade(){
+  function fade() {
     (elementToFade.opacity -= 0.1) < 0 ? elementToFade.display = "none" : setTimeout(fade, 40);
+  }*/
+  
+  // https://stackoverflow.com/questions/871399/cross-browser-method-for-detecting-the-scrolltop-of-the-browser-window
+  // Get the scrolltop
+  function getScrollTop() {
+    if (typeof pageYOffset != 'undefined') {
+      //most browsers except IE before #9
+      return pageYOffset;
+    } else {
+      var B = document.body; //IE 'quirks'
+      var D = document.documentElement; //IE with doctype
+      D = (D.clientHeight) ? D : B;
+      return D.scrollTop;
+    }
   }
   
-  // https://gist.github.com/dezinezync/5487119
-  // smoothly scroll to the portfolio
   function scrollTo(Y, duration, easingFunction) {
     var start = Date.now();
-    var elem = document.documentElement.scrollTop ? document.documentElement : document.body;
-    var from = elem.scrollTop;
+    var from = getScrollTop();
     
     if (from == Y) {
       return;
     }
-    
+  
     function min(a, b) {
-    	return a < b ? a : b;
+      return a < b ? a : b;
     }
-    
+  
     function scroll(timestamp) {
-      var currentTime = Date.now();
-      var time = min(1, ((currentTime - start) / duration));
-      var easedT = easingFunction(time);
+      var currentTime = Date.now(),
+          time = min(1, ((currentTime - start) / duration)),
+          easedT = easingFunction(time),
+          topCalc = (easedT * (Y - from)) + from;
       
-      elem.scrollTop = (easedT * (Y - from)) + from;
-      
+      document.documentElement.scrollTop = topCalc;
+      document.body.scrollTop = topCalc;
+  
       if (time < 1) {
         requestAnimationFrame(scroll);
       }
@@ -38,7 +51,7 @@ window.onload = function() {
         return;
       }
     }
-    
+  
     requestAnimationFrame(scroll)
   }
   
@@ -96,16 +109,16 @@ window.onload = function() {
   var distanceFromTop = document.getElementById('portfolio').getBoundingClientRect().top;
   
   // fade out the overlay when the user clicks the close button
-  document.getElementById('close').onclick = function() {
+/*  document.getElementById('close').onclick = function() {
     fade();
-  };
+  };*/
   
   // fade out the overlay when the escape key is pressed
-  document.addEventListener("keydown", function(key) {
+/*  document.addEventListener("keydown", function(key) {
     if (key.which == 27) {
       fade();
     }
-  });
+  });*/
   
   // scroll to the portfolio when the link to it is clicked
   document.getElementById('portfolio-link').onclick = function() {
