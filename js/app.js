@@ -3,6 +3,12 @@ var projects = angular.module('projects', []);
 projects.controller('projectList', function($scope) {
   $scope.projects = [
     {
+      img: 'img/lmddgtfy.png',
+      url: 'https://lmddgtfy.github.io',
+      title: 'LMDDGTFY',
+      description: 'Since having 2 other Let Me DuckDuckGo projects on GitHub by different people wasn\'t enough, I had to create a 3rd. My version aims to look as close to the real DuckDuckGo (ddg.gg) site as possible, and it has both a dark and a light theme, both of which match DDG\'s.'
+    },
+    {
       img: 'img/zeke-y-design.png',
       url: '#',
       title: 'Zeke Y Design',
