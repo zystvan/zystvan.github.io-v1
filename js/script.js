@@ -1,14 +1,6 @@
 window.onload = function() {
   // functions
   
-  // https://stackoverflow.com/a/18018710/4013202
-  // fade something out
-/*  var elementToFade = document.getElementById('overlay').style;
-  elementToFade.opacity = 1;
-  function fade() {
-    (elementToFade.opacity -= 0.1) < 0 ? elementToFade.display = "none" : setTimeout(fade, 40);
-  }*/
-  
   // https://stackoverflow.com/questions/871399/cross-browser-method-for-detecting-the-scrolltop-of-the-browser-window
   // Get the scrolltop
   function getScrollTop() {
@@ -107,18 +99,6 @@ window.onload = function() {
   background.style["background-repeat"] = "no-repeat";
   
   var distanceFromTop = document.getElementById('portfolio').getBoundingClientRect().top;
-  
-  // fade out the overlay when the user clicks the close button
-/*  document.getElementById('close').onclick = function() {
-    fade();
-  };*/
-  
-  // fade out the overlay when the escape key is pressed
-/*  document.addEventListener("keydown", function(key) {
-    if (key.which == 27) {
-      fade();
-    }
-  });*/
   
   // scroll to the portfolio when the link to it is clicked
   document.getElementById('portfolio-link').onclick = function() {
