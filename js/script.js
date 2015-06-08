@@ -1,8 +1,7 @@
 window.onload = function() {
   // functions
-  
-  // https://stackoverflow.com/questions/871399/cross-browser-method-for-detecting-the-scrolltop-of-the-browser-window
   // Get the scrolltop
+  // https://stackoverflow.com/questions/871399/cross-browser-method-for-detecting-the-scrolltop-of-the-browser-window
   function getScrollTop() {
     if (typeof pageYOffset != 'undefined') {
       //most browsers except IE before #9
@@ -47,7 +46,7 @@ window.onload = function() {
     requestAnimationFrame(scroll)
   }
   
-  // options for easing when I call the obove function
+  // options for easing when I call the above function
   var easing = {
     // no easing, no acceleration
     linear: function(t) { return t },
@@ -75,7 +74,6 @@ window.onload = function() {
     'img/mountain-top.jpg',
     'img/ocean-mountains.jpg',
     'img/stream.jpg',
-    'img/volcano.jpg',
     'img/bear.jpg',
     'img/leopard.jpg',
     'img/mountain-ridge.jpg',
